@@ -7,19 +7,15 @@ video.playsInline = true;
 video.controls = true;
 
 document.body.appendChild(video);
+
 window.addEventListener("load", () => {
-
-      video.play().catch(err => {
-        console.log("Autoplay bloqueado:", err);
-      });
-
-      /* if(video.play()){
-        video.muted = false;
-      } */
-
+    video.play().catch(err => {
+      console.log("Autoplay bloqueado:", err);
     });
-    window.addEventListener("load", ()=>{
-      setTimeout(()=>{
-        video.muted = false;
-      }, 500)
-    })
+});
+
+window.addEventListener("load", ()=>{
+  setTimeout(()=>{
+    video.muted = false;
+  }, 500)
+});
