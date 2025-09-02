@@ -2,12 +2,14 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #000;
 }
 video{
     position: fixed;   /* mantém o vídeo fixo no fundo */
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     object-fit: contain; /* preenche sem distorcer */
+    margin: 0;
 }
